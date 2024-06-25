@@ -3,6 +3,7 @@
 Este proyecto es una aplicación web para el challenge de alura, este proyecto permite encriptar y desencriptar texto utilizando un método específico. La interfaz de usuario es responsive y se adapta a diferentes tamaños de pantalla, asegurando una experiencia de usuario consistente tanto en dispositivos móviles como en pantallas más grandes.
 
 <h3>Insignias</h3>
+
 ![Prancheta 3](https://github.com/sebasroman2/encriptador-de-texto/assets/66809193/59abdde0-cb90-4348-a423-38fa3d702fa7)
 
 <h2>Características</h2> 
