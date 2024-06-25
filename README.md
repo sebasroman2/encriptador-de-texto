@@ -1,6 +1,6 @@
 <h1>Encriptador de Texto</h1>
 
-Este proyecto es una aplicación web que permite encriptar y desencriptar texto utilizando un método específico. La interfaz de usuario es responsive y se adapta a diferentes tamaños de pantalla, asegurando una experiencia de usuario consistente tanto en dispositivos móviles como en pantallas más grandes.
+Este proyecto es una aplicación web para el challenge de alura, este proyecto permite encriptar y desencriptar texto utilizando un método específico. La interfaz de usuario es responsive y se adapta a diferentes tamaños de pantalla, asegurando una experiencia de usuario consistente tanto en dispositivos móviles como en pantallas más grandes.
 
 <h2>Características</h2> 
 
@@ -31,3 +31,6 @@ Este proyecto es una aplicación web que permite encriptar y desencriptar texto 
 5. Para desencriptar el texto haz clic en el botón "Copiar", ingresa el texto encriptado en el área de texto de entrada y haz clic en el botón "Desencriptar".
 6. El texto desencriptado aparecerá en el área de salida.
 
+<h2>Personas Desarrolladoras del Proyecto</h2>
+
+Juan Sebastian Roman Paz
