@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --color-blanco: #FFFFFF;
+    --color-gris-claro: #495057;
+    --color-primario: #0A3871;
+    --color-secundario: #D8DFE8;
+    --color-terciario: #343A40;
+    ---color-hover: #272727;
+
+    --fuente-inter: "Inter", sans-serif;
+}
+
+/* Globales */
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;    /* 1rem = 10px */
+    font-family: var(--fuente-inter);
+    background: var(--color-blanco);
+}
+
+img {
+    max-width: 100%;
+}
+
+textarea {
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+button {
+    border-radius: 24px;
+    padding: 24px;
+    font-size: 16px;
+    width: 40%;
+    cursor: pointer;
+    border-color: var(--color-primario);
+}
+
+.container {
+    display: flex;
+    padding: 40px 0px;
+}
+
+/* Encabezado */
+
+.header {
+    width: auto;
+    background: var(--color-blanco);
+}
+
+/* Cuerpo */
+.main {
+    margin: auto;
+    width: 1160px;
+    height: 944px;
+    display: flex;
+    background: var(--color-blanco);
+}
+
+/* Entrada */
+.entrada {
+    width: 70%;
+    height: auto;
+    border-radius: 24px;
+    padding-top: 128px;
+    background-color: var(--color-blanco);
+}
+
+/* Entrada de texto */
+.entrada__texto {
+    width: 90%;
+    height: 80%;
+    color: var(--color-primario);
+    font-size: 32px;
+    background: var(--color-blanco);
+}
+
+.entrada__texto::placeholder {
+    color: var(--color-primario);
+}
+
+/* Mensaje de instrucciones*/
+
+.entrada__mensaje {
+    font-size: 12px;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    color: var(--color-gris-claro);
+}
+
+/* Botonoes de entrada */
+.entrada__boton {
+    display: flex;
+    gap: 24px;
+}
+
+.entrada__boton__encriptar {
+    background: var(--color-primario);
+    color: var(--color-blanco);
+}
+
+.entrada__boton__desencriptar {
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+}
+
+/* Salida */
+.salida {
+    width: 35%;
+    border-radius: 32px;
+    background-color: var(--color-blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.3);
+}
+
+/* Titulo de salida */
+.salida__h1 {
+    color: var(--color-terciario);
+    font-size: 24px;
+}
+
+/* Texto de salida */
+.salida__texto {
+    text-align: center;
+    width: 100%;
+    color: var(--color-gris-claro);
+}
+
+.salida__texto::placeholder {
+    color: var(--color-gris-claro);
+    font-size: 16px;
+}
+
+.salida__div {
+    padding: 20px;
+}
+
+.salida__boton {
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    width: 80%;
+    display: none;
+}
+
+/* footer */
+
+.footer {
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 20px;
+    color: var(--color-primario);
+    padding: 0 20px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    button {
+        width: 50%;
+    }
+    
+    .container {
+        display: block;
+        padding: 20px;
+        border-radius: 32px;
+    }
+
+    .main {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        background: var(--color-blanco);
+    }
+
+    .entrada {
+        width: auto;
+        height: 944px;
+        padding-bottom: 100px;
+    }
+
+    .entrada__texto,
+    .entrada__mensaje,
+    .entrada__boton {
+        width: 100%;
+    }
+
+    .salida {
+        width: 100%;
+        min-height: 200px;
+    }
+
+    .salida__imagen {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .entrada__boton {
+        flex-direction: column;
+    }
+    
+    .entrada__boton__encriptar,
+    .entrada__boton__desencriptar {
+        width: 100%;
+    }
+}
